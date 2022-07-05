@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    color: coral;
+    text-shadow: 3px 3px 4px silver;
+    font-weight:bold ;
+    font-family: sans-serif,cursive;
+    font-size: xx-large;
+}
+/*
+efectos alert
+1.fondo
+2.ventana
+3.footer
+*/
+.swal-overlay{
+    background-color: rgb(203, 241, 233);
+}
+.swal-modal{
+    border: 3rem;
+}
+.swal-footer{
+background-color: aliceblue;
+margin-top: 32px;
+border-top: 2px solid black;
+}

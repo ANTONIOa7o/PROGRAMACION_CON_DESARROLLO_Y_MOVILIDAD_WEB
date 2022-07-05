@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+====================================
+  TIPOS DE VARIABLES EN JavaScript
+====================================
+1.String-> Cadena de texto(caracteres)
+        a.Su sintaxis siempre irá entre comillas(dobles o simples)
+        b. Dentro de comillas dobles, podremos y debemos comillas simples y 
+        viceversa.
+
+2.Number -> Valores numericos
+        a.Guarda indistintamente en una variable, cualquier cualidad de los numeros
+        reales.
+        b.Soporta 3  bases numericas diferentes. Por omision base 10, las otras dos
+        serán la Octal(base 8) y la Hexadecimal(base 16)
+
+        --**Identificaremos un número hexadecimal precedido de -0x- y
+             los octales precedidos de -0-
+
+3.Boolean(Buleano)-> variables logicas
+        a.Solo pueden dos valores: true,false
+        b.minuscula
+        c.Necesidad de establecer Comparaciones
+        d. el equivalente de valor numero; es false=0, true=1
+         (cualquier numero distino a =0)
+
+4.Object -> Objetos
+
+5.Null -> No existe(objets)-no lo encuentra, no comprende
+
+6.Undefined -> la variable si está definida, lo que no tiene es valor
+    -->
+    <script>
+        var texto="JavaScript";
+        var numero= 7.8;
+        var buleana= false;
+        var fecha = new Date();
+        var nula= null;
+        var variable;
+
+
+/*
+Operador typeof:
+devolver una cadena que nos va indicar el tipo de operando sin evaluación
+
+*/
+document.write("Texto: "+ texto + "tipo: "+ typeof(texto)+"<br>");
+document.write("Numero: "+ numero + "tipo: "+ typeof(numero)+"<br>");
+document.write("Boolean: "+ buleana + "tipo: "+ typeof(buleana)+"<br>");
+document.write("Fecha "+ fecha + "tipo: "+ typeof(fecha)+"<br>");
+document.write("Nulo: "+ nula + "tipo: "+ typeof(nula)+"<br>");
+document.write("Variable: "+ variable + "tipo: "+ typeof(variable)+"<br>");
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversiones</title>
+</head>
+<body>
+    <script>
+
+var dato =window.prompt("Escriba un numero decimal");
+
+/*
+parseFloat, convertir el argumento, una cadena y la devolverá como numero de
+punto flotante.ed:
+Si el primer caracter no se puede convertir a numero, parseFloat devuelve Nan(No as Number),
+la funcion toma la cadena y trata de retornar(enviar, responder) un valor numerico
+decimal
+*/
+var real =parseFloat(dato);
+/*
+parseInt comprobar el primer argumento, una cadena e intenta devolver un numero ENTERO,
+DE LA BASE ESPECIFICADA.
+ed: el funcionamiento base del parseInt, en el fondo es similar al parseFloat, ambos
+buscan el cambio de string a number, con la salvedad que este extrae unicamente aquella
+parte de la cadena que pueda reconocerse como entero.
+*/
+var entero = parseInt(dato);
+var numero =6;
+var booleana=true;
+
+console.log("Dato: " + dato + " Tipo-"+ typeof(dato));
+console.log("Real: " + real + " Tipo-"+ typeof(real));
+console.log("Entero: " + entero + " Tipo-"+ typeof(entero));
+console.log("Numero: " + numero + " Tipo-"+ typeof(numero));
+console.log("Buleano: " + booleana + " Tipo-"+ typeof(booleana));
+    </script>
+</body>
+</html>

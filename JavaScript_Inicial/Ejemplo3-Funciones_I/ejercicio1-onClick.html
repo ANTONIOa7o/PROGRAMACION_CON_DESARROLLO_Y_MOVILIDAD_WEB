@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      
+</head>
+<body>
+    <div class="container" style="text-align:center ; margin:0 auto; " >
+        <button onclick="saludar()" type="button" class="btn btn-success btn-lg">Saludar</button>
+        <button onclick=" despedir()" type="button" class="btn btn-secondary btn-lg">Despedir</button>
+    </div>
+    <script>
+        /*
+        ============================================
+                       FUNCIONES
+        ============================================
+        Entendidas y definidas como declaraciones de funciones o expresion de funcion.
+        Consta de la palabra clave y reservada function, seguida de:
+        1. El nombre de la funcion
+        2.Lista de parametros de la misma(que la definen), entre parentesis y separados por coma.
+        3.Las declaraciones de JavaScript que definiran la accion de la funcion, acotadas entre {}.
+
+        >>>>>>>>>>>>>>>>>>>>>>>     VARIABLES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+     => Variables Globales:
+        ->Son globales cuando se puede acceder a su contendido o valor desde cualquier punto de la pagina donde 
+        resida el script.
+        ->Se tendrá que declarar fuera de cualquier otro procedimiento o funcion definida.
+        ->Permanecerá en memoria mientras esté cargada la pagina o el motor de la pagina allí donde se esta ejecutando.
+        ->Recomendacion de uso: Solo se deben de utilizar cuando realmente exista la necesidad
+        de compartir el valor de esa variable entre todas las partes del codigo desarrollado.-
+        ->Sintaxis:
+
+        var total=0;                        [variable global]
+
+        function patricia(a,b) {                 [function nombre]+[(parametros)]
+
+        total = a+b                         [Declaracion de JavaScript, con variables]
+        
+        }
+        patricia(12,3);
+        */      
+            //Variable Global ↓
+       var nombre=window.prompt("Introduce nombre: ");
+
+        function saludar() {
+            //Variable local  ↓
+            var apellidos ="Cuadrado";
+            swal("Hola "+ nombre + " " +apellidos+".....");
+        }
+
+    /*
+    =>Variable Local:
+    Definidas dentro del entorno de la propia funcion, dejando de existir (ejecutar)
+    al terminar la ejecución el script al que es llamado.
+    ed: Cuando la funcion termina esa variable o variables son desalojadas de la memoria
+    por el propio motor del lenguje.
+    
+    */
+   function despedir() {
+    swal("Adios, alma de cantaro "+ nombre+ "!!!!");
+    /*
+    Ante la pregunta, podria utilizar la variable apellidos?
+    No
+    */
+    
+   }
+    </script>
+
+
+</body>
+</html>

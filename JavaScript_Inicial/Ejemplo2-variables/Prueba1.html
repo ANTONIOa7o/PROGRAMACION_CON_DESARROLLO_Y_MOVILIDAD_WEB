@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba E.L</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <h2>Ejercicio:
+        Donde un usuario que pueda introducir dos numeros, en cual aparezca
+        la suma de ambos numeros, resta, división y multiplicacion. <br>
+        Aclaracion**:
+        para pasar un string a numero, utilizaremos el metodo parseInt.ed, 
+        su sintaxis sera:
+        <p>
+            var nombre =parseInt(dato);
+        </p>
+    </h2>
+
+<script>
+var dato1 = window.prompt("Introduce el primer numero");
+var numero1=parseInt(dato1);
+
+var numero2 =parseInt(window.prompt("Introduce el segundo numero"));
+
+alert("La division seria: "+ numero1/numero2);
+
+/* swal("la resta seria:"+ numero1-numero2);
+swal("la suma seria:"+ numero1+numero2); Revisar y anidar*/
+console.log("La Suma seria: "+ numero1+numero2);
+document.write(numero1*numero2);
+</script>
+
+
+</body>
+</html>

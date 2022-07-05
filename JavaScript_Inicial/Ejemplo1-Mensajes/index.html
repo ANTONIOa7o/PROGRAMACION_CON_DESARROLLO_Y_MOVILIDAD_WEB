@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Presentacion</title>
+    <!--
+        Inyecto con el script la direccion a la que apunta ↓
+    -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <!--
+        =================================
+                    javaScrpt
+        =================================
+
+        Lenguaje de programación para añadir interactividad
+        No genera ningun tipo de codigo compilado
+        Fundamentos:
+        1.Interpretado y orientado a objetos
+        2. Debilmente Tipado
+        3. Utilizaba en un principia y aun con base a sus principios una
+        especificación de ECMASCRIPT
+        4. Sintaxis similar a C y convenciones similares a Java
+        5. Uso principal es en el lado Cliente(browser), aunque empiezan
+        a surgir opciones hacia el servidor
+        6. Debilidad en la grafias(Mayusculas, minisculas)
+        7. Sintaxis:
+            i. Link: <script src=""></script>
+            ii. Etiqueta en html <script> Parcheado </script> Ojo posicion del Script       
+    -->
+    <script>
+       /*  alert("Bienvenidos a mi primer Script");
+        alert("Hola de nuevo"); */
+       
+        /*
+        console.log()
+        Será otro metodo que nos ayuda a mostra un mensaje de contenido,
+        será mostrado en la consola del cliente. Donde se recibe como 
+        argumento uno o mas objetos. 
+        CADA OBJETO SE EVALUA Y CONCATENA EN UN STRING SEPARADO POR ESPACIOS
+        */
+       console.log(3+5+" Hola");
+       /*
+       Otro metodo de efecto directo sobre html, será
+       el document.write();
+       */
+      document.write("<h1>Hola desde mi pagina JS</h1>");
+          /*
+          SweetAlert(https://sweetaler.js.org/guides)
+          FrameWork de estilo para Alert
+          Configuracion desde CMD(Consola windows),lo siguiente:
+          1.Instalarme librerias qsue me ayuden a resolver los estilos
+          nuevo que quiero instalar
+          2.Inyectar la librerias con un script
+          [Recursos necesarios para implantar librerias de js]
+          $npm install sweetalert --save
+          */  
+         swal({
+            title:"Bienvenido a mi primer Script decente",
+            text:"Presiona para salir",
+            icon:"success",
+            button:"Gracias, que Ilusion!"
+         });
+    </script>
+</body>
+</html>
