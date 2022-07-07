@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos, relacionales y aritmeticos</title>
+</head>
+<body>
+    <!--
+        1.OPERADORES LÓGICOS.-
+
+Operación                       simbolo                     Descripción
+
+   Y                               &&               Considera true(verdadera) si ambas sentencia lo son
+   Ó                               ||               Considera true(verdadera) si alguna de las sentencias son verdaderas
+   NO                               !                Devuelve su valor contario
+
+        2.OPERADORES RELACIONALES.-
+
+Operación                       Simbolo                     Descripcion
+
+igual a                          ==                  Igualdad entre elementos comparados
+distinto de                       !=                   Contrario al elemento comparado
+Mayor, mayor e igual             >,>=               Comparación de cantidad, mayor que o mayor o igual que
+Menro, menor e igual             <,<=               Comparacion de cantidad, menor que o menor o igual que
+Igualdad estricta                 ===               Igualdad de toda la naturaleza o aspectos de la variable
+Distinto de la estricta          !==                Contrario al elemento comparado de manera estricta
+
+3.OPERADORES ARITMETICOS.-
+
+Operación                       Simbolo                         Descripcion
+
+Suma y Resta                        +,-
+Multiplicacion y division           *,/
+Cambio de signo                     -                   
+Incremento                          ++
+Decremento                          --
+Division entera                     /
+Resto de division                   %
+    -->
+
+<script>
+
+var numero=7;
+
+console.log("Igualdad: "+ (numero==7));
+console.log("Desigualda: "+ (numero !=7));
+console.log("Mayor: "+ (numero > 7));
+console.log("Mayor e igual: "+ (numero>=10));
+console.log("Menor: "+ (numero<5));
+console.log("Menor e igual: "+ (numero<=7));
+
+//Igualdad estricta
+console.log("Igualdad: "+ (numero =="7"));
+console.log("Igualdad estricta: "+ (numero==="7"));
+/*
+*/
+console.log("Desigualdad: "+ (numero!="7"));
+console.log("Desigualdad estricta: "+ (numero!=="7"));
+
+//Operadores Logicos
+var nombre1="Juan";
+var nombre2="Pepa";
+
+console.log("Condicion Y: " + ((nombre1=="Juan")&&(nombre2=="Pepaaa")) );
+console.log("Condicion Ó: " + ((nombre1=="Juan")||(nombre2=="Pepaaa")) );
+console.log("Negacion 2º sentencia: " + (!(nombre2=="Pepaaa")) );
+console.log("Negacion de 1º Sentencia: " + (!(nombre1=="Juan")) );
+
+
+
+</script>    
+</body>
+</html>
