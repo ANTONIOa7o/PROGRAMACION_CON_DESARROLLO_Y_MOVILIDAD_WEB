@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla multiplicacion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+    <!--Ejercicio:
+    Introduce un numero y que saque al menos una tabla de multiplicar del  1 al 10
+    como maximo, es decir, si se introduce el 2, saque la  tabla de multiplicar del 2
+-->
+</head>
+
+<body>
+    <div class="container" style="width: 380px; text-align: center ;">
+        <label>tabla de multiplicar</label>
+        <input id="numero" type="text" class="form-control" size="4"/>
+        <button onclick="multiplicacion()" class="btn btn-primary">❌<img
+                src="../images/calculator.png" alt=""></button>
+        <div id="resultado"></div>
+    </div>
+    <script>
+        var inputNumero= document.getElementById('numero');
+        function multiplicacion(){
+            var numero = parseInt(inputNumero.value);
+            var tabla="";
+            for (var i = 1; i <= 10; i++) {
+
+                 tabla += numero + "x" +i+ "="+ numero*i+ "<br>"               
+                
+            }/*         ↑
+                 Operador de asignacion
+                 Suma el valor  de la derecha a la variable de la
+                 izquierda, añadiendo y retornando el nuevo valor
+              */
+            document.getElementById('resultado').innerHTML=(tabla);
+        }
+    </script>
+</body>
+</html>

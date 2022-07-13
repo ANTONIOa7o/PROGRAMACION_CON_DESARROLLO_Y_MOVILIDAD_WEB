@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de nº perfecto</title>
+</head>
+
+<body>
+    <!--
+Nummero Perfecto, 
+Será aquel es igual a la suma de sus divisores, con resto exanto; ejemplo el 6, divisor 3, 2 y 1
+    -->
+    <script>
+        var numero = 1;
+
+        while (numero <= 100) {
+            var suma = 0;
+            for (let divisor = 1; divisor < numero; divisor++) {
+                if (numero % divisor == 0) {
+                    suma += divisor
+                }
+                
+            }
+            if(suma==numero){
+                document.write("El  numero: " + numero + " es PERFECTO"+"<br>");
+            }
+            numero++;
+        }
+    </script>
+</body>
+
+</html>

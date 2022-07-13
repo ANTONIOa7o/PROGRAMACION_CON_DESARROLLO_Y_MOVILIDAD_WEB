@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+         numero primo es el numero  natural mayor que 1, y que tiene unicamente
+        dos  divisores(positivos) distintos, serán el mismo y el 1;
+         ed. Divibles por si mismos  y por  el 1
+
+         Ejercicio  busqueda del primer primo a partir del numero 20
+    -->
+    <script>
+        var numero = 20;
+        var encontrado = false;/* variable  boolean  definir un condicion*/
+
+        while (!encontrado) {
+            var esprimo = true;
+            for (let divisor = 2; divisor < numero; divisor++) {
+
+                if (numero % divisor == 0) {
+                    var esprimo = false;
+                }
+            }
+            if (esprimo) {
+                document.write("El primer numero encontrado primo es: " + numero);
+                encontrado = true;
+
+            }
+            numero++
+        }
+    </script>
+
+</body>
+
+</html>
