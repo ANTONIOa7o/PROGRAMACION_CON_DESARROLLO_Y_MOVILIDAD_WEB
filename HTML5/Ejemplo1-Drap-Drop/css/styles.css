@@ -1,0 +1,27 @@
+.inputImagen{
+    background-image: url(../images/globo2.png) ;
+    width: 125px;
+    height: 125px; 
+    background-position: center;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 3px 3px 8px gainsboro,
+    6px 6px 8px gainsboro;
+    cursor: pointer;
+}
+img{
+
+    display: block;
+    background-position: center;
+    width: 125px;
+    height: 125px;
+    background-repeat: no-repeat;
+}
+#contenedor{
+    width: 300px;
+    height: 200px;
+    float: right;
+    text-align: center;
+    margin: 20%;
+ 
+}

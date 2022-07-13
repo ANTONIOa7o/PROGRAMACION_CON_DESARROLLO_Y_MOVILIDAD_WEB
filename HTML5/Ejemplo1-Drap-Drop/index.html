@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcion Drap Drop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<input class="inputImagen" id="arrastra" draggable="true" type="button" 
+ondragstart="inicio()" ondragend="fin()"/>
+
+    <div id="contenedor" ondragover="hacia()" ondragleave="ir()" ondrop="aqui()">
+        <img src="images/papelera.png" alt="">
+    </div>
+</body>
+</html>
