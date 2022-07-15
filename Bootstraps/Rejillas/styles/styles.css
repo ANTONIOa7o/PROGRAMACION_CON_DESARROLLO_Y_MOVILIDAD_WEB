@@ -1,0 +1,139 @@
+.border {
+    border-width: 8px !important;
+    border-color: white !important;
+}
+
+.encabezado {
+    background-color: gold;
+    text-align: left;
+    font-weight: bold;
+}
+
+.footer1 {
+    background-color: yellowgreen;
+    height: 60px;
+    text-align: left;
+    font-size: xx-large;
+    font-style: italic;
+
+}
+
+.footer2 {
+    background-color: yellowgreen;
+    height: 60px;
+    text-align: right;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.seccion1 {
+    background-color: crimson;
+    height: 400px;
+    text-align: center;
+    font-size: 100px;
+}
+
+.seccion2 {
+    background-color: crimson;
+    height: 400px;
+    text-align: center;
+    font-size: 100px;
+
+}
+
+.seccion3 {
+    background-color: crimson;
+    height: 400px;
+    text-align: center;
+    font-size: 100px;
+
+}
+
+/*
+@media (screen){  ↓
+    clases de cambio
+}  
+Desde esta directiva, el navegador puede identificar como si estuviera en la propia estructura de la pantalla. Esto que significa?
+el navegador se  considera a si mismo como clase de escritorio
+*/
+
+@media (max-width:992px) {
+    .encabezado {
+        background-color: rgb(148, 160, 160);
+        text-align: right;
+    }
+
+    .seccion1 {
+        height: 300px;
+        line-height: 300px;
+        text-align: left;
+
+    }
+
+    .seccion2 {
+        height: 300px;
+        line-height: 300px;
+        background-color: red;
+        text-align: right;
+
+    }
+
+    .seccion3 {
+        height: 300px;
+        line-height: 300px;
+        text-align: left;
+        background-color: cyan;
+    }
+
+    .footer1 {
+        text-align: center;
+    }
+
+    .footer2 {
+        text-align: center;
+    }
+
+}
+@media (max-width:780px) {
+    .encabezado {
+        background-color: salmon;
+        text-align: center;
+    }
+
+    .seccion1 {
+        height: 200px;
+        line-height: 200px;
+        text-align: left;
+
+    }
+    .seccion2 {
+        height: 200px;
+        line-height: 200px;
+        background-color: yellowgreen;
+        text-align: right;
+
+    }
+
+    .seccion3 {
+        height: 200px;
+        line-height: 200px;
+        text-align: left;
+        background-color: cyan;
+
+
+    }
+
+    .footer1 {
+        text-align: center;
+        background-color: yellow
+        
+        ;
+    }
+
+    .footer2 {
+        text-align: center;
+        background-color: yellow;
+    }
+
+    
+}
