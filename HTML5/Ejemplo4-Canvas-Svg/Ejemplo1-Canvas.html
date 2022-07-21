@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+
+</head>
+
+<body onload="dibujarForma();dibujarForma2();dibujaForma3()">
+    <!--
+<canvas> Html5, pone a disposicion una etiqueta para el desarrollo de dibujos gráficos, pero
+    ademas apoyado en directrices de javaScript.
+    Esta etiqueta contedora para generar secuencias de comandos de dibujo.
+    Usos, principales para su diseño, trazos definidos, cajas,  circulos,  personajes,  suma
+    de immagenes,..etc.
+    Canvas, se comporta parecido a una img, con la diferencia que sus atributos src y alt, no
+    existen.
+    Los atribujos principales  y necesarios son width y height, si no son definidos de forma 
+    predeterminada serán 3oo de ancho 150 alto
+    Desde css, se podra dar desarrollo estetico al canvas
+
+    -->
+    <canvas id="mycanvas"></canvas>
+    <canvas id="mycanvas2"></canvas>
+    <canvas id="mycanvas3"></canvas>
+    <script>
+        function dibujarForma() {
+            //1. Toma del elemento canvas usando el DOM
+            var canvas = document.getElementById('mycanvas');
+
+            //2. Asegurar la ejecucion de canvas en los  navegadores
+            if (canvas.getContext) {//ggetContext el  inicio para poder crear dibujos
+                var ctx = canvas.getContext('2d');
+
+                /*
+                3.Directivas de dibujo[Rectangulos]
+     
+                METODOS                                     DESCRIPCION
+                fillRect(x,y,ancho,alto)                el interior del rectangulo relleno
+                strokeRect(x,y,ancho,alto)              dibuja  el contorno
+                clearRect(x,y,ancho,alto)               Despeja  el area, en una area  especifica y la
+                                                        deja vacia, transparente.
+                */
+                ctx.fillRect(25, 25, 100, 100);
+                ctx.clearRect(45, 45, 60, 60);
+                ctx.strokeRect(50, 50, 50, 50);
+
+            }
+
+        }
+        function dibujarForma2() {
+
+            //1. Toma del elemento canvas usando el DOM
+            var canvas = document.getElementById('mycanvas2');
+
+            //2. Asegurar la ejecucion de canvas en los  navegadores
+            if (canvas.getContext) { //ggetContext el  inicio para poder crear dibujos
+                var ctx = canvas.getContext('2d');
+/*
+   3.Directivas de dibujo(Circulos)
+     
+                METODOS                                     DESCRIPCION
+beginPath()                                         Comienzo o como reseteo de la forma actual
+moveTo(x,y)                                         Inicia y enlaza el contorno de la forma partiendo 
+                                                    del punto dado
+closePath()                                         El  cierre de la  forma actual
+fill()                                              el relleno de la forma definida
+stroke()                                            dibujo de  contorno
+arc(x,y,radio,angulo de  incio, angulo final)
+
+*/                      ctx.beginPath();
+                ctx.arc(75, 75, 50, 0, Math.PI * 2, true);//Circulo
+
+                ctx.moveTo(110, 75);
+                ctx.arc(75, 75, 35, 0, Math.PI, false);//La boca
+
+                ctx.moveTo(65, 65);
+                ctx.arc(60, 65, 5, 0, Math.PI * 2, true);//Ojo izquierdo
+                ctx.moveTo(95, 65);
+                ctx.arc(90, 65, 5, 0, Math.PI * 2, true);//Ojo derecho
+                ctx.stroke();
+            }
+        }
+
+        function dibujaForma3() {
+
+            //1. Toma del elemento canvas usando el DOM
+            var canvas = document.getElementById('mycanvas3');
+
+            //2. Asegurar la ejecucion de canvas en los  navegadores
+            if (canvas.getContext) { //ggetContext el  inicio para poder crear dibujos
+                var ctx = canvas.getContext('2d');
+                //Dibujo de  lineas aprovechando una iteracion con incremento
+                for (i = 0; i < 10; i++) {
+
+                    ctx.lineWidth = i + 1
+                    ctx.beginPath();
+                    ctx.moveTo(5 + i * 14, 5);
+                    ctx.lineTo(5 + i * 14, 140);
+                    ctx.stroke();
+                }
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
